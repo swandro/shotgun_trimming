@@ -15,5 +15,10 @@ trimmomatic PE \
 "$output_base"_single_f.fastq \
 "$output_base"_paired_r.fastq \
 "$output_base"_single_r.fastq \
-ILLUMINACLIP:"$index_file":2:30:7
+ILLUMINACLIP:"$index_file":2:30:7 \
+TRAILING:20 \
+AVGQUAL:20 \
+SLIDINGWINDOW:20:20 \
+MINLEN:50
+
 ```
